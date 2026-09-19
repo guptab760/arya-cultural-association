@@ -531,13 +531,31 @@ header.nav{
    ========================================================= */
 
 .page-hero{
+  position:relative;
   background:
-    linear-gradient(90deg,#72006fe6,#9d247c99),
-    url('event.jpg') center/cover;
+    linear-gradient(
+      90deg,
+      rgba(105,0,93,0.82) 0%,
+      rgba(141,11,120,0.78) 50%,
+      rgba(141,11,120,0.72) 100%
+    ),
+    url('hero-bg.jpg') center/cover no-repeat;
   min-height:280px;
   color:white;
   display:flex;
-  align-items:center
+  align-items:center;
+  overflow:hidden;
+}
+
+.page-hero .container{
+  position:relative;
+  z-index:2;
+}
+
+.page-hero h1,
+.page-hero p{
+  position:relative;
+  z-index:2;
 }
 
 .page-hero h1{
